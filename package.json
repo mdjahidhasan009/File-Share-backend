@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "postinstall": "npm run tsc",
     "dev": "ts-node-dev server.ts",
-    "build": "tsc",
     "start": "node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
